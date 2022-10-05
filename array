@@ -1,0 +1,40 @@
+ static void Main(string[] args)
+        {
+
+            int[] sayidizisi={23,12,4,86,72,3,11,17};
+          
+           System.Console.WriteLine("Sırasız dizi");
+           foreach (var sayi in sayidizisi)
+           System.Console.WriteLine(sayi);
+          
+           //Sort
+           System.Console.WriteLine("Sıralı dizi");
+           Array.Sort(sayidizisi);
+           foreach (var sayi in sayidizisi)
+           System.Console.WriteLine(sayi);
+
+           //Clear
+           System.Console.WriteLine("Array Clear");
+           //sayidizisi elemanlarını kullnarak 2.indexten itibaren iki tan elemanı sıfrlar
+           Array.Clear(sayidizisi,2,2);
+           foreach (var sayi in sayidizisi)
+           System.Console.WriteLine(sayi);
+
+           //Reverse
+            System.Console.WriteLine("Array Reverse");
+           Array.Reverse(sayidizisi);
+           foreach (var sayi in sayidizisi)
+           System.Console.WriteLine(sayi);
+
+           //indexOf
+            System.Console.WriteLine("Array İndexOf");
+           Array.IndexOf(sayidizisi,23);
+           System.Console.WriteLine(Array.IndexOf(sayidizisi,23));
+
+           //Resize
+           System.Console.WriteLine("Array Resize");
+           Array.Resize<int>(ref sayidizisi,9);
+           sayidizisi[8]=99;
+           foreach (var sayi in sayidizisi)
+           System.Console.WriteLine(sayi);
+          
